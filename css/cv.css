@@ -1,0 +1,110 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+   display: flex;
+   margin: 0 auto;
+   gap: 20px;
+   border: 10px solid black;
+   background-color: red;
+   width: 80%;
+}
+
+.image-profil {
+    padding: 10px;
+    width: 20%;
+    height: 50%;
+    object-fit: cover; 
+}
+
+.titre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.titre-1 {
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.titre-2 {
+    font-size: 70px;
+}
+
+.titre-3 {
+    font-size: 70px;
+}
+
+/* PRESENTATION */
+
+.presentation {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   border: 10px solid black;
+   background-color: red;
+   width: 30%;
+   text-transform: uppercase;
+}
+
+.fond {
+    background-color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+.bordure-titre {
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid black;
+    width: 100%;
+    gap: 15px;
+}
+
+/* COMPETENCES */
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 10px solid black;
+    background-color: cyan;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+/* EXPERIENCES */
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 10px solid black;
+    background-color: yellow;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+/* FORMATIONS */
+
+.formations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 10px solid black;
+    background-color: green;
+    width: 30%;
+    text-transform: uppercase;
+}
