@@ -1,136 +1,197 @@
+/* Applique le box-sizing à tous les éléments et leurs pseudo-éléments avant et après */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+/* Style de base pour le corps du document */
 body {
-    background-color: cyan;
-    height: 100vh;
-    margin: 0 auto; 
+    background-color: cyan; /* Couleur de fond cyan */
+    height: 100vh; /* Hauteur de la vue */
+    margin: 0 auto; /* Pas de marge, centré automatiquement */
 }
 
+/* Style pour l'en-tête */
 header {
-    width: 100%;
-    background-position: center;
-    color: white;
+    width: 100%; /* Largeur totale */
+    background-position: center; /* Position d'arrière-plan centrée */
+    color: white; /* Texte en blanc */
 }
 
+/* Style pour la barre de navigation */
 .navbar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Contenu centré horizontalement */
+    width: 100%; /* Largeur totale */
 }
 
+/* Style pour la liste dans la navigation */
 .liste {
-    font-size: 30px;
-    word-spacing: 8px;
-    position: fixed;
+    font-size: 30px; /* Taille de la police */
+    word-spacing: 8px; /* Espacement entre les mots */
+    position: fixed; /* Positionnement fixe */
 }
 
+/* Style pour les liens dans la liste */
 .liste a {
-    font-family: jaini;
-    font-weight: 400;
-    font-size: 35px;
-    align-items: center;
-    color: black;
+    font-family: jaini; /* Police personnalisée */
+    font-weight: 400; /* Poids de la police */
+    font-size: 35px; /* Taille de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: black; /* Couleur du texte en noir */
 }
 
+/* Style pour le héros d'en-tête */
 .hero-header {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
+    flex-direction: column; /* Direction en colonne */
+    align-items: center; /* Alignement centré */
 }
 
+/* Style pour l'image de l'en-tête */
 .header-image {
-    width: 30%;
-    object-fit: cover;
+    width: 30%; /* Largeur de 30% */
+    object-fit: cover; /* Recouvrement de l'image */
+    border-radius: 500px 500px 10px 10px; /* Bords arrondis spécifiques */
 }
 
+/* Style pour le titre */
 .titre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: Charmonman;
-    font-size: 110px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 6px;
+    display: flex; /* Utilisation de flexbox */
+    flex-wrap: wrap; /* Flex-wrap activé */
+    justify-content: center; /* Centré horizontalement */
+    font-family: Charmonman; /* Police personnalisée */
+    font-size: 110px; /* Taille de la police */
+    font-weight: 700; /* Poids de la police */
+    text-transform: uppercase; /* Texte en majuscules */
+    color: black; /* Couleur du texte en noir */
+    letter-spacing: 6px; /* Espacement entre les lettres */
 }
 
+/* Style supplémentaire pour le titre-1 */
 .titre-1 {
-    padding-top: 10px;
+    padding-top: 10px; /* Espacement en haut */
 }
 
+/* Style modifié pour l'image d'en-tête (dupliqué avec un différent width) */
 .header-image {
-    width: 20%;
-    border-radius: 500px 500px 10px 10px;
-    object-fit: cover;
+    width: 20%; /* Largeur de 20% */
+    border-radius: 500px 500px 10px 10px; /* Bords arrondis spécifiques */
+    object-fit: cover; /* Recouvrement de l'image */
 }
 
-
-
-/* section-presentation */
-
+/* Section principale */
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1400px;
-    margin: 0 auto;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
+    flex-direction: column; /* Direction en colonne */
+    max-width: 1400px; /* Largeur maximale */
+    margin: 0 auto; /* Centré automatiquement */
 }
 
+/* Section de présentation - mise en commentaire */
 /* .section-presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
 } */
 
+/* Style pour les petits titres */
 .petit-titre {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
+    padding-top: 50px; /* Espacement en haut */
 }
 
+/* Style pour les titres au milieu */
 .titre-milieu {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
 }
 
+/* Style pour le conteneur */
 .container {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
 }
 
+/* Style pour l'image au milieu */
 .image-milieu {
-    width: 80%;
-    border-radius: 50px;
-    
+    width: 80%; /* Largeur de 80% */
+    border-radius: 50px; /* Bords arrondis */
 }
 
+/* Style pour les informations */
 .infos {
-    display: flex;
-    gap: 50px;
+    display: flex; /* Utilisation de flexbox */
+    gap: 50px; /* Espacement entre les éléments */
 }
 
+/* Style pour les blocs */
 .blocs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 5px solid white;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 12px;
-    width: 150px;
-    padding: 25px;
-    text-transform: uppercase;
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Alignement centré verticalement */
+    justify-content: center; /* Centré horizontalement */
+    flex-direction: column; /* Direction en colonne */
+    background-color: white; /* Fond blanc */
+    border-radius: 10px; /* Bords arrondis */
+    font-size: 12px; /* Taille de la police */
+    width: 150px; /* Largeur */
+    padding: 25px; /* Espacement intérieur */
+    text-transform: uppercase; /* Texte en majuscules */
 }
 
+/* Style pour le texte */
 .texte {
-    padding-top: 25px;
+    text-align: start; /* Alignement du texte à gauche */
+    padding-top: 25px; /* Espacement en haut */
 }
 
+/* Style pour le conteneur de paragraphe */
 .container-paragraphe {
-    margin: 0 auto;
+    margin: 0 auto; /* Centré automatiquement */
+}
+
+/* COMPÉTENCES */
+/* Style pour le conteneur de compétences */
+.container-competences {
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Direction en colonne */
+    flex-wrap: wrap; /* Flex-wrap activé */
+    background-color: white; /* Fond blanc */
+    width: 30%; /* Largeur */
+    height: 50%; /* Hauteur */
+}
+
+/* PARCOURS */
+
+/* Style pour le conteneur de parcours */
+.container-parc {
+    display: flex; /* Utilisation de flexbox */
+    flex-wrap: wrap; /* Flex-wrap activé */
+    justify-content: center; /* Centré horizontalement */
+    gap: 15px; /* Espacement entre les éléments */
+}
+
+/* Style pour les éléments de parcours */
+.container-parcours {
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Direction en colonne */
+    justify-content: center; /* Centré horizontalement */
+    width: 15%; /* Largeur */
+    background-color: white; /* Fond blanc */
+    text-transform: uppercase; /* Texte en majuscules */
+    border-radius: 15px; /* Bords arrondis */
+}
+
+/* Style pour l'expérience */
+.expe {
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centré horizontalement */
+}
+
+/* Style pour le lieu */
+.lieu {
+    text-align: center; /* Alignement centré */
+    font-size: 12px; /* Taille de la police */
 }
