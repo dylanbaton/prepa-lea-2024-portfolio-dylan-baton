@@ -1,3 +1,32 @@
+<?php
+// Paramètres de connexion
+$serveur = "localhost";
+$utilisateur = "root";
+$mot_de_passe = "";
+$base_de_donnees = "prepa-lea-2024-portfolio-dylan-baton";
+// Établir la connexion
+$connexion = mysqli_connect($serveur, $utilisateur,
+$mot_de_passe, $base_de_donnees);
+       
+        
+// print_r($_POST);
+// $_POST est t-il vide ?
+if(isset($_POST['email'])){
+    echo 'le formulaire a été soumis correctement';
+    $nom_prenom = mysqli_real_escape_string($connexion, $_POST['nom']);
+    $email = mysqli_real_escape_string($connexion, $_POST['email']);
+    $telephone = mysqli_real_escape_string($connexion, $_POST['telephone']);
+    $message = mysqli_real_escape_string($connexion, $_POST['message']);
+    
+    $sql= "INSERT INTO contact( nom_prenom, email, telephone, message) VALUES ('$nom_prenom','$email','$telephone','$message')";
+    mysqli_query($connexion, $sql);
+    header("Location: contact.php");
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,15 +48,15 @@
      
     <main>
       <section class="content">   
-            <form class="formulaire" action="formulaireConfirmation.php" method="post">
+            <form class="formulaire" action="" method="post">
                 
                 <h2 class="titre-block">Formulaire</h2>
                
-                <label for="nom/prenom">Nom / Prénom*</label>
-                <input type="text" id="nom/prenom" name="nom/prenom">
+                <label for="nom">Nom / Prénom*</label>
+                <input type="text" id="nom" name="nom">
 
                 <label for="email">E-mail*</label>
-                <input type="text" id="emial" name="email">
+                <input type="text" id="email" name="email">
 
                 <label for="telephone">Telephone*</label>
                 <input type="text" id="telephone" name="telephone"></input>
