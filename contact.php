@@ -40,7 +40,7 @@ if(isset($_POST['email'])){
     <nav class="navbar">
         <div class="liste">
             <a href="index.html">accueil</a>
-            <a href="realisations.html">realisations/projets</a>
+            <a href="realisations.php">realisations/projets</a>
             <a href="mon-cv.html">mon cv</a>
             <a href="contact.html">contact</a>
         </div>  
