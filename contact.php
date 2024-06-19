@@ -7,9 +7,7 @@ $base_de_donnees = "prepa-lea-2024-portfolio-dylan-baton";
 // Établir la connexion
 $connexion = mysqli_connect($serveur, $utilisateur,
 $mot_de_passe, $base_de_donnees);
-       
-        
-// print_r($_POST);
+
 // $_POST est t-il vide ?
 if(isset($_POST['email'])){
     echo 'le formulaire a été soumis correctement';
@@ -22,9 +20,6 @@ if(isset($_POST['email'])){
     mysqli_query($connexion, $sql);
     header("Location: contact.php");
 }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +59,8 @@ if(isset($_POST['email'])){
                 <label for="message">Message*</label>
                 <textarea type="text" id="message" name="message"></textarea>
 
-                <button type="submit">Envoyer</button>
+                <button class="bouton-envoyer" type="submit">Envoyer</button>
+                <a class="bouton-admin" href="administration/contacts-liste.php">Admin</a>
             </form>
         </section>
 

@@ -14,19 +14,19 @@ $resultat = mysqli_query($connexion, $sql);
 // Fermer la connexion
 mysqli_close($connexion);
 
-foreach ($resultat as $contact) {
+foreach ($resultat as $projet) {
     echo '
-    <div class="">
-        <div class="">
-            <h3>'. $projet['titre'] .'</h3>
+        <div class="card">
+            <div class="titre">
+                <h1>' . $projet['titre'] . '</h1>
+            </div>
+            <div class="paragraphe">
+                <p>' . $projet['description'] . '</p>
+            </div>
+            <div class="image">
+                <img src="' . $projet['image'] . '" alt="Project Image">
+            </div>
         </div>
-        <div class="">
-            <h3>'. $projet['description'] .'</h3>
-        </div>
-        <div class="">
-            <h3>'. $projet['image'] .'</h3>
-        </div>
-    </div> 
     ';
 }
 ?>

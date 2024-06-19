@@ -70,7 +70,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-bottom: 10%;
-    opacity: 0.90;
 }
 
 .titre-block {
@@ -127,6 +126,29 @@ ul {
     color: black;
 }
 
+.bouton-admin {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.bouton-admin:hover {
+    color: lightskyblue;
+}
+
+.texte {
+    color: black;
+}
+
+.texte:hover {
+    color: red;
+}
+
+/* FOOTER */
+
 footer {
     width: 100%;
     background-color: #361E14;
@@ -164,10 +186,3 @@ footer {
     padding: 10px;
 }
 
-.texte {
-    color: black;
-}
-
-.texte:hover {
-    color: red;
-}

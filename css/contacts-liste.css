@@ -1,0 +1,12 @@
+.container {
+    padding: 15px;
+}
+
+.container-infos {
+    width: 15%;
+    background-color: red;
+}
+
+.nom {
+    text-transform: uppercase;
+}

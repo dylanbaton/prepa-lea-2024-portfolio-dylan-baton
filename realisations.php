@@ -18,15 +18,6 @@ $sql = "SELECT * FROM projet";
 $resultat = mysqli_query($connexion, $sql);
 // Fermer la connexion
 mysqli_close($connexion);
-
-// if(isset($_POST['titre'])){
-//     $titre = mysqli_real_escape_string($connexion, $_POST['titre']);
-//     $description = mysqli_real_escape_string($connexion, $_POST['description']);
-//     $image = mysqli_real_escape_string($connexion, $_POST['image']);
-    
-//     $sql= "INSERT INTO projet( titre, description, image) VALUES ('$titre','$description','$image')";
-//     mysqli_query($connexion, $sql);
-// }
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +25,7 @@ mysqli_close($connexion);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/realisation.css">
     <title>Document</title>
 </head>
 <body>
@@ -45,24 +37,24 @@ mysqli_close($connexion);
                 <a href="contact.php">contact</a>
             </div>  
         </nav>
-<?php
-                       foreach ($resultat as $projet) {
-                            echo '
-                        <div class="">
-                           <div class="">
-                                <h1>'. $projet['titre'] .'</h1>
+        <div class="container">
+            <?php
+                foreach ($resultat as $projet) {
+                    echo '
+                        <div class="card">
+                            <div class="titre">
+                                <h1>' . $projet['titre'] . '</h1>
                             </div>
-                            <div class="">
-                                <p>'. $projet['description'] .'</p>
+                            <div class="paragraphe">
+                                <p>' . $projet['description'] . '</p>
                             </div>
-                            <div class="">
-                                <img src="../prepa-lea-2024-portfolio-dylan-baton/images/projet/Capture -d’écran-dylan.png"'. $projet['image'] .'>
-                                <img src="../prepa-lea-2024-portfolio-dylan-baton/images/projet/Capture-d’écran-dylan-2.png"'. $projet['image'] .'>
-                                <img src="../prepa-lea-2024-portfolio-dylan-baton/images/projet/Capture-d’écran-dylan-3.png"'. $projet['image'] .'>
+                            <div class="image">
+                                <img src="' . $projet['image'] . '" alt="Project Image">
                             </div>
-                        </div> 
-                            ';
-                       }
-                    ?>
+                        </div>
+                    ';
+                }
+            ?>
+        </div>
 </body>
 </html>
