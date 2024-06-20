@@ -1,23 +1,119 @@
-.container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
+
 
 body {
     background-color: red;
+    margin: 0 auto;
+}
+
+/* titrepage */
+
+.titrepage {
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.liste {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    position: fixed;
+    background-color: white;
+    width: 35%;
+    height: 5%;
+    border-radius: 50px;
+    gap: 15px;
+}
+
+
+.liste a {
+    font-family: jaini;
+    font-weight: 400;
+    font-size: 35px;
+    align-items: center;
+    color: black;
+}
+
+/* container */
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 200px;
 }
 
 .card {
     display: flex;
-    justify-content: center;
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: whitesmoke;
 }
 
-img {
-    width: 80%;
-    height: 80%;
+.titrecard {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.image {
+    height: 300px;
+    width: 90%;
+}
+
+.modif-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+/* FOOTER */ 
+
+footer {
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+}
+
+.liste-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.prenom {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.liste-footer a {
+    color: black; 
+}
+
+.lien-reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    padding: 10px;
 }

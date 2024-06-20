@@ -9,7 +9,7 @@ $connexion = mysqli_connect($serveur, $utilisateur,
 $mot_de_passe, $base_de_donnees);
 
 // Exécuter une requête SELECT
-$sql = "SELECT * FROM contact";
+$sql = "SELECT id, titre, description, image FROM projet WHERE id ";
 $resultat = mysqli_query($connexion, $sql);
 // Fermer la connexion
 mysqli_close($connexion);
