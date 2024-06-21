@@ -117,3 +117,9 @@ footer {
 .icon {
     padding: 10px;
 }
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

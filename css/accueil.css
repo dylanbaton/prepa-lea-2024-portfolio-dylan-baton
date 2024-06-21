@@ -38,11 +38,13 @@ header {
 
 /* Style pour les liens dans la liste */
 .liste a {
-    font-family: jaini; /* Police personnalisée */
-    font-weight: 400; /* Poids de la police */
-    font-size: 35px; /* Taille de la police */
+    display: flex;
+    font-family: Cormorant Garamond; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
     align-items: center; /* Alignement vertical au centre */
     color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 /* Style pour le héros d'en-tête */
@@ -65,17 +67,18 @@ header {
     display: flex; /* Utilisation de flexbox */
     flex-wrap: wrap; /* Flex-wrap activé */
     justify-content: center; /* Centré horizontalement */
-    font-family: Charmonman; /* Police personnalisée */
+    font-family: aladin; /* Police personnalisée */
     font-size: 110px; /* Taille de la police */
-    font-weight: 700; /* Poids de la police */
+    font-weight: bold 700 italic; /* Poids de la police */
     text-transform: uppercase; /* Texte en majuscules */
     color: black; /* Couleur du texte en noir */
     letter-spacing: 6px; /* Espacement entre les lettres */
+    padding-top: 50px;
 }
 
 /* Style supplémentaire pour le titre-1 */
 .titre-1 {
-    padding-top: 10px; /* Espacement en haut */
+    padding-top: 50px; /* Espacement en haut */
 }
 
 /* Style modifié pour l'image d'en-tête (dupliqué avec un différent width) */
@@ -115,6 +118,7 @@ main {
     display: flex; /* Utilisation de flexbox */
     justify-content: center; /* Centré horizontalement */
     margin: 0 auto;
+    font-family: aladin; /* Police personnalisée */
 }
 
 /* Style pour le conteneur */
@@ -198,7 +202,6 @@ main {
 /* Style pour le conteneur de parcours */
 .container-parc {
     display: flex; /* Utilisation de flexbox */
-    flex-wrap: wrap; /* Flex-wrap activé */
     justify-content: center; /* Centré horizontalement */
     gap: 15px; /* Espacement entre les éléments */
     padding-bottom: 30px;

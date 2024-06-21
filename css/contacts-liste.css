@@ -10,3 +10,9 @@
 .nom {
     text-transform: uppercase;
 }
+
+.boutonretouaccueil {
+    font-size: 30px;
+    background-color: black;
+    color: red;
+}
