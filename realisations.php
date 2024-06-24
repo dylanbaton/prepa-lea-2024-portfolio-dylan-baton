@@ -31,6 +31,8 @@ mysqli_close($connexion);
             <a href="realisations.php">realisations/projets</a>
             <a href="mon-cv.html">mon cv</a>
             <a href="contact.php">contact</a>
+            <a class="bouton-admin" href="administration/realisation-ajout.php">Admin</a>
+            <a class="bouton-admin" href="administration/realisation-liste.php">liste</a>
         </div>  
     </nav>
 
@@ -49,19 +51,13 @@ mysqli_close($connexion);
                         <div class="image">
                             <img class="modif-image" src="' . $projet['image'] . '" alt="Project Image">
                         </div>
-                        <form class="bouton" action="realisation-detail.php" method="GET">
-                            <input type="hidden" name="id" value="1">
-                            <button type="submit">en savoir plus</button>
-                        </form>
+                        <a href="realisation-detail.php?id=' . $projet['id'] . '">En savoir plus</a>
                     </div>                    
                 ';
             }
         ?>
     </div>
-    <!-- <form class="bouton" action="realisation-detail.php" method="GET">
-        <input type="hidden" name="id" value="2">
-        <button type="submit">en savoir plus</button>
-    </form> -->
+    <a class="bouton-admin" href="administration/realisation-ajout.php">Admin</a>
     <footer>
         <div class="prenom">
             <small>By Dylan.</small>  
