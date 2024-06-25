@@ -5,9 +5,9 @@
 
 /* Style de base pour le corps du document */
 body {
-    background-color: cyan; /* Couleur de fond cyan */
     height: 100vh; /* Hauteur de la vue */
     margin: 0 auto; /* Pas de marge, centré automatiquement */
+    background-color: #487B99;
 }
 
 /* Style pour l'en-tête */
@@ -15,6 +15,8 @@ header {
     width: 100%; /* Largeur totale */
     background-position: center; /* Position d'arrière-plan centrée */
     color: white; /* Texte en blanc */
+    background-image:url(../images/header/image-header-7.png);
+    
 }
 
 /* Style pour la barre de navigation */
@@ -23,13 +25,17 @@ header {
     justify-content: center; /* Contenu centré horizontalement */
 }
 
+.logo-nav {
+    object-fit: cover;
+}
+
 /* Style pour la liste dans la navigation */
 .liste {
     display: flex;
     justify-content: center;
     font-size: 30px; /* Taille de la police */
     position: fixed; /* Positionnement fixe */
-    background-color: orangered;
+    background-color: #994516;
     width: 100%;
     height: 8%;
     gap: 15px;
@@ -38,12 +44,13 @@ header {
 /* Style pour les liens dans la liste */
 .liste a {
     display: flex;
-    font-family: Cormorant Garamond; /* Police personnalisée */
+    font-family: Gideon Roman; /* Police personnalisée */
     font-weight: 700; /* Poids de la police */
     font-size: 25px; /* Taille de la police */
     align-items: center; /* Alignement vertical au centre */
     color: black; /* Couleur du texte en noir */
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Style pour le héros d'en-tête */
@@ -66,11 +73,11 @@ header {
     display: flex; /* Utilisation de flexbox */
     flex-wrap: wrap; /* Flex-wrap activé */
     justify-content: center; /* Centré horizontalement */
-    font-family: aladin; /* Police personnalisée */
+    font-family: Tapestry; /* Police personnalisée */
     font-size: 110px; /* Taille de la police */
-    font-weight: bold 700 italic; /* Poids de la police */
+    font-weight: 700; /* Poids de la police */
     text-transform: uppercase; /* Texte en majuscules */
-    color: black; /* Couleur du texte en noir */
+    color: #994516; /* Couleur du texte en noir */
     letter-spacing: 6px; /* Espacement entre les lettres */
     padding-top: 50px;
 }
@@ -109,6 +116,10 @@ main {
     justify-content: center; /* Centré horizontalement */
     padding-top: 50px; /* Espacement en haut */
     margin: 0 auto;
+    font-family: Gideon Roman;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase; /* Texte en majuscules */
 }
 
 /* Style pour les titres au milieu */
@@ -116,7 +127,10 @@ main {
     display: flex; /* Utilisation de flexbox */
     justify-content: center; /* Centré horizontalement */
     margin: 0 auto;
-    font-family: aladin; /* Police personnalisée */
+    font-family: Tapestry; /* Police personnalisée */
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Texte en majuscules */
 }
 
 /* Style pour le conteneur */
@@ -124,11 +138,17 @@ main {
     display: flex; /* Utilisation de flexbox */
     justify-content: center; /* Centré horizontalement */
     padding-top: 50px;
+    gap: 50px;
 }
+
+.container-image {
+    width: 30%;
+}
+
 
 /* Style pour l'image au milieu */
 .image-milieu {
-    width: 80%; /* Largeur de 80% */
+    width: 100%; /* Largeur de 80% */
     border-radius: 50px; /* Bords arrondis */
 }
 
@@ -144,7 +164,7 @@ main {
     align-items: center; /* Alignement centré verticalement */
     justify-content: center; /* Centré horizontalement */
     flex-direction: column; /* Direction en colonne */
-    background-color: white; /* Fond blanc */
+    background-color: #B1DAEB; /* Fond blanc */
     border-radius: 10px; /* Bords arrondis */
     font-size: 12px; /* Taille de la police */
     width: 150px; /* Largeur */
@@ -156,11 +176,13 @@ main {
 .texte {
     text-align: start; /* Alignement du texte à gauche */
     padding-top: 25px; /* Espacement en haut */
+    font-family: Gideon Roman ;
+    font-size: 20px;
 }
 
 /* Style pour le conteneur de paragraphe */
 .container-paragraphe {
-    margin: 0 auto; /* Centré automatiquement */
+    width: 40%;
 }
 
 /* COMPÉTENCES */
@@ -181,7 +203,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #B1DAEB;
     width: 25%;
     gap: 50px;
     padding: 20px;
@@ -212,7 +234,7 @@ main {
     flex-direction: column; /* Direction en colonne */
     justify-content: center; /* Centré horizontalement */
     width: 15%; /* Largeur */
-    background-color: white; /* Fond blanc */
+    background-color: #B1DAEB; /* Fond blanc */
     text-transform: uppercase; /* Texte en majuscules */
     border-radius: 15px; /* Bords arrondis */
 }
@@ -221,19 +243,28 @@ main {
 .expe {
     display: flex; /* Utilisation de flexbox */
     justify-content: center; /* Centré horizontalement */
+    font-family: Tapestry; /* Police personnalisée */
 }
 
 /* Style pour le lieu */
 .lieu {
     text-align: center; /* Alignement centré */
     font-size: 12px; /* Taille de la police */
+    font-family: Gideon Roman ;
+    font-weight: 700; /* Poids de la police */
+}
+
+.p {
+    font-family: Gideon Roman ;
+    font-weight: 700; /* Poids de la police */
+    text-transform: uppercase;
 }
 
 /* FOOTER */
 
 footer {
     width: 100%;
-    background-color: orangered;
+    background-color: #994516;
     color: white;
     font-size: 20px;
     padding: 5px;
@@ -244,17 +275,26 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: Gideon Roman ; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 .prenom {
     display: flex;
     justify-content: center;
     font-size: 50px;
+    font-family: Gideon Roman; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 .liste-footer a {
-    color: white; 
+    color: black; 
 }
 
 .lien-reseaux {

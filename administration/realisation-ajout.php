@@ -58,6 +58,7 @@ echo "Connexion réussie à la base de données.";
 
                 <button class="bouton-envoyer" type="submit">Envoyer</button>
                 <a class="bouton-admin" href="../realisations.php">Réalisations</a>
+                <a class="boutonretouaccueil" href="../page-admin.html">page gestion</a>
 
             </form>
         </section>

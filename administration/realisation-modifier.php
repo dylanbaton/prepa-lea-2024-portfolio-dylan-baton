@@ -42,7 +42,7 @@ echo "Connexion réussie à la base de données.";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/realisation-ajout.css">
+    <link rel="stylesheet" href="../css/realisation-modifier.css">
     <title>Document</title>
 </head>
 <body>
@@ -56,10 +56,10 @@ echo "Connexion réussie à la base de données.";
                 <input type="text" id="titre" name="titre" value="<?php echo $projet['titre']; ?>">
 
                 <label for="description">Description</label>
-                <textarea type="text" id="description" name="description"></textarea>
+                <textarea type="text" id="description" name="description" value="<?php echo $projet['description']; ?>"></textarea>
 
                 <label for="image">Image</label>
-                <input type="text" id="image" name="image">
+                <input type="text" id="image" name="image" value="<?php echo $projet['image']; ?>">
 
                 <button class="bouton-envoyer" type="submit">Envoyer</button>
                 <a class="bouton-admin" href="../realisations.php">Réalisations</a>

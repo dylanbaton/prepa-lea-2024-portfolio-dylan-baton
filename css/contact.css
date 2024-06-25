@@ -36,7 +36,7 @@ header {
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
-    font-family: "Noto Serif JP";
+    font-family: Gideon Roman;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -72,15 +72,33 @@ main {
     margin-bottom: 10%;
 }
 
+h1 {
+    font-family: Tapestry; /* Police personnalisée */
+    font-size: 30px; /* Taille de la police */
+    letter-spacing: 3px; /* Espacement entre les lettres */
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
+label {
+    font-family: Gideon Roman;
+    font-weight: 700; /* Poids de la police */
+    font-size: 20px;
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
 .titre-block {
     display: flex;
     justify-content: center;
+    font-family: Tapestry; /* Police personnalisée */
+    font-size: 30px; /* Taille de la police */
+    letter-spacing: 3px; /* Espacement entre les lettres */
+    text-transform: uppercase; /* Texte en majuscules */
 }
 
 .formulaire {
     display: flex;
     flex-direction: column;
-    font-family: Cormorant Garamond;
+    font-family: Gideon Roman;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -119,7 +137,7 @@ main {
 ul {
     display: flex;
     flex-direction: column;
-    font-family: Cormorant Garamond;
+    font-family: Gideon Roman;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -151,29 +169,39 @@ ul {
 
 footer {
     width: 100%;
-    background-color: #361E14;
+    background-color: #994516;
     color: white;
     font-size: 20px;
     padding: 5px;
-    bottom: 0;
     position: absolute;
+    bottom: 0;
 }
 
 .liste-footer {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: Gideon Roman ; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 .prenom {
     display: flex;
     justify-content: center;
     font-size: 50px;
+    font-family: Gideon Roman; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 .liste-footer a {
-    color: white; 
+    color: black;
+    text-decoration: none; 
 }
 
 .lien-reseaux {

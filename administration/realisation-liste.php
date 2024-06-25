@@ -36,6 +36,7 @@ mysqli_close($connexion);
 </head>
 <body>
     <a href="realisation-ajout.php">Ajouter un contenu</a>
+    <a class="boutonretouaccueil" href="../page-admin.html">page gestion</a>
     <h1 class="titrepage">realisations liste</h1>
     <div class="row">
         <?php

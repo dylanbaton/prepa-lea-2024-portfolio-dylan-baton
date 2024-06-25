@@ -29,6 +29,9 @@ if(isset($_POST['email'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="favicon.ico" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse&family=Tapestry&display=swap" rel="stylesheet">
     <title>Formulaire</title>
 </head>
 <body>
@@ -46,7 +49,7 @@ if(isset($_POST['email'])){
       <section class="content">   
             <form class="formulaire" action="" method="post">
                 
-                <h2 class="titre-block">Formulaire</h2>
+                <h1 class="titre-block">Formulaire</h1>
                
                 <label for="nom">Nom / Prénom*</label>
                 <input type="text" id="nom" name="nom">
@@ -61,7 +64,6 @@ if(isset($_POST['email'])){
                 <textarea type="text" id="message" name="message"></textarea>
 
                 <button class="bouton-envoyer" type="submit">Envoyer</button>
-                <a class="bouton-admin" href="administration/contacts-liste.php">Admin</a>
             </form>
         </section>
 

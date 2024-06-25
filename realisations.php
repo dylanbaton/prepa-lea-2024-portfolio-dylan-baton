@@ -22,6 +22,9 @@ mysqli_close($connexion);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/realisation.css">
     <link rel="shortcut icon" href="favicon.ico" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Tapestry&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -31,7 +34,7 @@ mysqli_close($connexion);
             <a href="realisations.php">realisations/projets</a>
             <a href="mon-cv.html">mon cv</a>
             <a href="contact.php">contact</a>
-            <a class="bouton-admin" href="administration/realisation-ajout.php">Admin</a>
+            <a class="bouton-admin" href="administration/realisation-ajout.php">ajouter</a>
             <a class="bouton-admin" href="administration/realisation-liste.php">liste</a>
         </div>  
     </nav>
@@ -51,13 +54,12 @@ mysqli_close($connexion);
                         <div class="image">
                             <img class="modif-image" src="' . $projet['image'] . '" alt="Project Image">
                         </div>
-                        <a href="realisation-detail.php?id=' . $projet['id'] . '">En savoir plus</a>
+                        <a class="bouton" href="realisation-detail.php?id=' . $projet['id'] . '">En savoir plus</a>
                     </div>                    
                 ';
             }
         ?>
     </div>
-    <a class="bouton-admin" href="administration/realisation-ajout.php">Admin</a>
     <footer>
         <div class="prenom">
             <small>By Dylan.</small>  

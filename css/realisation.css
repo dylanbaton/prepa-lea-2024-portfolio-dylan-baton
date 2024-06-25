@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: red;
+    background-color: #2373B8;
     margin: 0 auto;
 }
 
@@ -29,21 +29,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    position: fixed;
-    background-color: white;
+    font-size: 30px; /* Taille de la police */
+    position: fixed; /* Positionnement fixe */
+    background-color: whitesmoke;
     width: 100%;
     height: 8%;
     gap: 15px;
 }
 
+.titrepage {
+    font-family: Tapestry; /* Police personnalisée */
+    font-size: 110px; /* Taille de la police */
+    font-weight: bold 700 italic; /* Poids de la police */
+    text-transform: uppercase; /* Texte en majuscules */
+    color: whitesmoke; /* Couleur du texte en noir */
+    letter-spacing: 6px; /* Espacement entre les lettres */
+}
+
 
 .liste a {
-    font-family: jaini;
-    font-weight: 400;
-    font-size: 35px;
-    align-items: center;
-    color: black;
+    display: flex;
+    font-family: Gideon Roman ; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -84,30 +95,45 @@ body {
     object-fit: cover;
 }
 
+.bouton {
+    padding-top: 10px;
+}
+
 /* FOOTER */ 
 
 footer {
     width: 100%;
     background-color: whitesmoke;
     color: black;
-    font-size: 20px;
+    padding: 5px;
 }
 
 .liste-footer {
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-size: 30px;
+    font-family: Gideon Roman ; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
+    align-items: center; /* Alignement vertical au centre */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
+    
 }
 
 .prenom {
     display: flex;
     justify-content: center;
     font-size: 50px;
+    font-family: Gideon Roman ; /* Police personnalisée */
+    font-weight: 700; /* Poids de la police */
+    color: black; /* Couleur du texte en noir */
+    text-transform: uppercase;
 }
 
 .liste-footer a {
-    color: black; 
+    color: black;
+    text-decoration: none; 
 }
 
 .lien-reseaux {

@@ -25,6 +25,7 @@ mysqli_close($connexion);
 </head>
 <body>
 <a class="boutonretouaccueil" href="../index.html">Accueil</a>
+<a class="boutonretouaccueil" href="../page-admin.html">page gestion</a>
     <div class="container">
         <?php    
             foreach ($resultat as $contact) {
