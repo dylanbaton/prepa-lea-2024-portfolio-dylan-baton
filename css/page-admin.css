@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background-color: blueviolet;
+    background-image: url(../images/body/lamborghini.png);
 }
 
 .navbar {
@@ -18,6 +18,7 @@ body {
 
 .liste a {
     color: white;
+    box-shadow: 10px 5px 5px black;
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
@@ -37,7 +38,8 @@ main {
 h1 {
   font-size: 80px;
   text-transform: uppercase;
-  color: white;  
+  color: #DBAD00; 
+   
 }
 
 .bouton {
@@ -50,7 +52,19 @@ a {
     font-size: 50px;
     text-decoration: none;
     border: 3px solid black;
-    color: white;
+    color: #60544B;
     text-transform: uppercase;
+    box-shadow: 10px 5px 5px black;
 }
 
+.un {
+    color: black;
+}
+
+.deux {
+    color: #563D00;
+}
+
+.trois {
+    color: #520607;
+}

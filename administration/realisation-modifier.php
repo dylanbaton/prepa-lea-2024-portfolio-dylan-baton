@@ -31,8 +31,6 @@ if(isset($_POST['titre'])){
 // Vérifier la connexion
 if (!$connexion) {
 die("Échec de la connexion : " . mysqli_connect_error());
-} else {
-echo "Connexion réussie à la base de données.";
 }
 ?>
 

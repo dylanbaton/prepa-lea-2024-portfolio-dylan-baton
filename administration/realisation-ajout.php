@@ -26,8 +26,6 @@ if(isset($_POST['titre'])){
 // Vérifier la connexion
 if (!$connexion) {
 die("Échec de la connexion : " . mysqli_connect_error());
-} else {
-echo "Connexion réussie à la base de données.";
 }
 ?>
 
@@ -57,8 +55,12 @@ echo "Connexion réussie à la base de données.";
                 <input type="text" id="image" name="image">
 
                 <button class="bouton-envoyer" type="submit">Envoyer</button>
-                <a class="bouton-admin" href="../realisations.php">Réalisations</a>
-                <a class="boutonretouaccueil" href="../page-admin.html">page gestion</a>
+                <div class="bloc-1">
+                   <a class="bouton-admin" href="../realisations.php">Réalisations</a> 
+                </div>
+                <div class="bloc-2">
+                   <a class="bouton-accueil" href="../page-admin.html">page gestion</a> 
+                </div>
 
             </form>
         </section>

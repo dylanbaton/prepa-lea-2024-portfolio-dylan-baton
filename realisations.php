@@ -34,8 +34,6 @@ mysqli_close($connexion);
             <a href="realisations.php">realisations/projets</a>
             <a href="mon-cv.html">mon cv</a>
             <a href="contact.php">contact</a>
-            <a class="bouton-admin" href="administration/realisation-ajout.php">ajouter</a>
-            <a class="bouton-admin" href="administration/realisation-liste.php">liste</a>
         </div>  
     </nav>
 
@@ -70,6 +68,8 @@ mysqli_close($connexion);
             <a href="realisations.html">realisations/projets</a>
             <a href="mon-cv.php">mon cv</a>
             <a href="contact.html">contact</a>
+            <a class="bouton-admin" href="administration/realisation-ajout.php">ajouter</a>
+            <a class="bouton-admin" href="administration/realisation-liste.php">liste</a>
         </div>
 
         <div class="lien-reseaux">

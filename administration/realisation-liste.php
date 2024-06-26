@@ -30,13 +30,17 @@ mysqli_close($connexion);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/realisation.css">
+    <link rel="stylesheet" href="../css/realisation-liste.css">
     <link rel="shortcut icon" href="favicon.ico" type="">
     <title>Document</title>
 </head>
 <body>
-    <a href="realisation-ajout.php">Ajouter un contenu</a>
-    <a class="boutonretouaccueil" href="../page-admin.html">page gestion</a>
+    <div class="bouton-haut">
+        <a class="bouton-2" href="realisation-ajout.php">Ajouter un contenu</a>
+        <a class="bouton-2" href="../page-admin.html">page gestion</a>
+        <a class="bouton-2" href="../index.html">accueil</a>
+    </div>
+    
     <h1 class="titrepage">realisations liste</h1>
     <div class="row">
         <?php

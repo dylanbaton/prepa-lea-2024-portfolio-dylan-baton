@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: #2373B8;
+    background-image: url(../images/body/paysage-mer.png);
     margin: 0 auto;
 }
 
@@ -56,10 +56,23 @@ body {
     color: black; /* Couleur du texte en noir */
     text-transform: uppercase;
     text-decoration: none;
-    padding: 20px;
 }
 
 /* container */
+
+.bouton-haut {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.bouton-2 {
+    background-color: white;
+    text-decoration: none;
+}
 
 .row {
     display: flex;
@@ -104,57 +117,4 @@ body {
 
 .bouton {
     padding-top: 10px;
-}
-
-/* FOOTER */ 
-
-footer {
-    width: 100%;
-    background-color: whitesmoke;
-    color: black;
-    padding: 5px;
-}
-
-.liste-footer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-family: Gideon Roman ; /* Police personnalisée */
-    font-weight: 700; /* Poids de la police */
-    font-size: 25px; /* Taille de la police */
-    align-items: center; /* Alignement vertical au centre */
-    color: black; /* Couleur du texte en noir */
-    text-transform: uppercase;
-}
-
-.prenom {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    font-family: Gideon Roman ; /* Police personnalisée */
-    font-weight: 700; /* Poids de la police */
-    color: black; /* Couleur du texte en noir */
-    text-transform: uppercase;
-}
-
-.liste-footer a {
-    color: black;
-    text-decoration: none; 
-    padding: 20px;
-}
-
-.lien-reseaux {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.icon {
-    padding: 10px;
-}
-
-.bouton {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
 }

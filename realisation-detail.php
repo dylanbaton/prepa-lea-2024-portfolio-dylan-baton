@@ -18,23 +18,7 @@ $id = $_GET['id'];
 
 // Préparer une requête SQL
 $sql = "SELECT * FROM projet WHERE id = $id";
-$resultat = mysqli_query($connexion, $sql);
-
-        foreach ($resultat as $projet) {
-            echo '
-                <div class="card">
-                    <div class="titre">
-                        <h1>' . $projet['titre'] . '</h1>
-                    </div>
-                    <div class="paragraphe">
-                        <p>' . $projet['description_realisation_liste'] . '</p>
-                    </div>
-                    <div class="image">
-                        <img src="' . $projet['image_realisation_liste'] . '" alt="Project Image">
-                    </div>
-                </div>
-            ';
-        }
+$resultat = mysqli_query($connexion, $sql);  
 
 // Fermer la connexion
 mysqli_close($connexion);
@@ -45,9 +29,37 @@ mysqli_close($connexion);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/realisation-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Tapestry&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <a class="bouton-admin" href="realisations.php">Réalisations</a>
+<nav class="navbar">
+        <div class="liste">
+            <a class="bouton-admin" href="realisations.php">retour aux réalisations</a>
+        </div>  
+    </nav>
+    <div class="block">
+        <?php
+            foreach ($resultat as $projet) {
+                echo '
+                    <div class="card">
+                        <div class="titre">
+                            <h1>' . $projet['titre'] . '</h1>
+                        </div>
+                        <div class="paragraphe">
+                            <p>' . $projet['description_realisation_liste'] . '</p>
+                        </div>
+                        <div class="image">
+                            <img src="' . $projet['image_realisation_liste'] . '" alt="Project Image">
+                        </div>
+                    </div>
+                ';
+            }
+        ?>
+    </div>
+    
 </body>
 </html>

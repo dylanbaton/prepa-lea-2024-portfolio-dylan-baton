@@ -3,7 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../images/body/image-contact.jpg);
+    background-image: url(../images/body/drapeau-france.png);
     background-position: center;
     overflow: hidden;
     object-fit: cover;
@@ -103,11 +103,39 @@ main {
     margin: 5px;
     border: none;
     border-radius: 4px;
-    background-color: orange;
+    background-color: blue;
     color: white;
     cursor: pointer;
 }
 
 .formulaire button:hover {
     background-color: red;
+}
+
+.bloc-2 {
+    padding-top: 5px;
+}
+
+.bouton-admin {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.bouton-accueil {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.bouton-accueil:hover {
+    color: orangered;
+}
+
+.bouton-admin:hover {
+    color: black;
 }
