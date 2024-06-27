@@ -52,7 +52,10 @@ mysqli_close($connexion);
                         <div class="image">
                             <img class="modif-image" src="' . $projet['image'] . '" alt="Project Image">
                         </div>
-                        <a class="bouton" href="realisation-detail.php?id=' . $projet['id'] . '">En savoir plus</a>
+                        <div class="bouton-savoir">
+                            <a class="bouton" href="realisation-detail.php?id=' . $projet['id'] . '">En savoir plus</a>
+                        </div>
+                        
                     </div>                    
                 ';
             }
